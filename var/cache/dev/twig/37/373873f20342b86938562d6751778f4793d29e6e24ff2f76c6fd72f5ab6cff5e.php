@@ -67,6 +67,6 @@ class __TwigTemplate_9866922f4592d29ec4c5ca87bc96a8c1fe945b461bf5a4052ab5b11ef66
     public function getSourceContext()
     {
         return new Source("{{ include('@Twig/Exception/exception.xml.twig', { exception: exception }) }}
-", "@Twig/Exception/exception.atom.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.atom.twig");
+", "@Twig/Exception/exception.atom.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.atom.twig");
     }
 }

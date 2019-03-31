@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Горячая новость{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+	<a href="/">Вернуться к списку новостей</a>
+    <h1>{{selectedNews.title}}</h1>
+    <p>{{selectedNews.content}}</p>
+    <h6>Источник: {{selectedNews.author}} <br><a href="{{selectedNews.originalLink}}">Ссылка на оригинал </a> </h6></li>
+</div>
+{% endblock %}

@@ -77,6 +77,6 @@ class __TwigTemplate_142a05eb364150b99e2fc3517a638c43b38aeb718584e41f74246cd9216
 <?php printf('%s=\"%s\" ', \$view->escape(\$k), \$view->escape(\$v)) ?>
 <?php endif ?>
 <?php endforeach ?>
-", "@Framework/Form/attributes.html.php", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\attributes.html.php");
+", "@Framework/Form/attributes.html.php", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\attributes.html.php");
     }
 }

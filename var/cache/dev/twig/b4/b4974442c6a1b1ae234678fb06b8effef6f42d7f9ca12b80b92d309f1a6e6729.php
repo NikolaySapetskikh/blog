@@ -408,6 +408,6 @@ class __TwigTemplate_daf92a56bcc0e51b5abc17d0190e7301ff0d2b0f20f24d19eecc882ea37
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\debug-bundle\\Resources\\views\\Profiler\\dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\debug-bundle\\Resources\\views\\Profiler\\dump.html.twig");
     }
 }

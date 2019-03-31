@@ -152,6 +152,6 @@ class __TwigTemplate_0869a571882e2c6c4f693106c9c950e3dc3b8ab19796ed48f5275789a89
     <h2>{{ messages[about].title }}</h2>
     <p>{{ messages[about].message }}</p>
 {% endblock %}
-", "@WebProfiler/Profiler/info.html.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\info.html.twig");
+", "@WebProfiler/Profiler/info.html.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\info.html.twig");
     }
 }

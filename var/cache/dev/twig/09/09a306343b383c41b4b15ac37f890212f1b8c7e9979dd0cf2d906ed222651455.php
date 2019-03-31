@@ -83,6 +83,6 @@ class __TwigTemplate_a0a452f5c5b20fbdde9549dd3ad2fab7347d5bde6a168843efb7dd3ed01
     c-0.4-0.4-1.1-1.4-0.7-2.6C6.3,9,6.6,8.6,6.9,8.2c0.9-0.6,1.8-0.7,2.8-0.6c1.2,0.4,1.8,1.1,2.6,1.8c0.5-1.2,1-2.4,1.8-3.5
     C15,5,16,4.3,17.2,4.2c1.3,0.2,2.2,0.7,2.2,1.6C19.4,6.2,19.2,6.9,18.5,6.9z\"/>
 </svg>
-", "@WebProfiler/Icon/symfony.svg", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Icon\\symfony.svg");
+", "@WebProfiler/Icon/symfony.svg", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Icon\\symfony.svg");
     }
 }

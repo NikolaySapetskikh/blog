@@ -77,6 +77,6 @@ class __TwigTemplate_d93ec6f16607f381131c32f467fc61492189d1f860696608d1d683e9433
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.css.twig");
+", "@Twig/Exception/error.css.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.css.twig");
     }
 }

@@ -106,6 +106,6 @@ class __TwigTemplate_17946cf215389a8beb950b9ffab96b89b1e7d72a089777447e00b8d87c8
     </exception>
 {% endfor %}
 </error>
-", "@Twig/Exception/exception.xml.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.xml.twig");
+", "@Twig/Exception/exception.xml.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.xml.twig");
     }
 }

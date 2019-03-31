@@ -167,6 +167,6 @@ class __TwigTemplate_760df47fe4741224cc442a47a2f693656fa4125067be340b07fdba38c7d
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\templates\\base.html.twig");
+", "base.html.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\templates\\base.html.twig");
     }
 }

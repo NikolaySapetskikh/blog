@@ -123,6 +123,6 @@ class __TwigTemplate_5b1be09ea8d0d84bbf992311aafff6f50139e8863782f19c4b7225fb42e
         </div>
     </body>
 </html>
-", "@Twig/Exception/error.html.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.html.twig");
+", "@Twig/Exception/error.html.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\error.html.twig");
     }
 }

@@ -1004,6 +1004,6 @@ class __TwigTemplate_899f693a54c8ecc45f73a6fa276a4357b0a8e1b2984040d81beace76ccc
         {% endif %}
     {% endfor %}
 {% endblock %}
-", "@Swiftmailer/Collector/swiftmailer.html.twig", "D:\\Back_END\\OSPanel\\domains\\symfony2\\vendor\\symfony\\swiftmailer-bundle\\Resources\\views\\Collector\\swiftmailer.html.twig");
+", "@Swiftmailer/Collector/swiftmailer.html.twig", "D:\\Back_END\\OSPanel\\domains\\blog\\vendor\\symfony\\swiftmailer-bundle\\Resources\\views\\Collector\\swiftmailer.html.twig");
     }
 }
