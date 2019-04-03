@@ -17,4 +17,13 @@ class MainController extends AbstractController
     	$allNews = $newsRepository -> findAll();
     	return $this->render('main/index.html.twig', compact('allNews'));
     }
+    /**
+     * @Route("/news/{id}", name="news")
+     */
+    public function getOneNews(NewsRepository $newsRepository, $id)
+    {	
+    	$selectedNews = $newsRepository -> find($id);
+        return $this->render('news/index.html.twig', compact('selectedNews'));
+    }
+
 }

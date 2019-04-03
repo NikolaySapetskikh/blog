@@ -50,7 +50,7 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'], ['token'], null, null, false, false, null]],
             149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
             159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-            183 => [[['_route' => 'news', '_controller' => 'App\\Controller\\NewsController::index'], ['id'], null, null, false, true, null]],
+            183 => [[['_route' => 'news', '_controller' => 'App\\Controller\\MainController::getOneNews'], ['id'], null, null, false, true, null]],
         ];
     }
 }

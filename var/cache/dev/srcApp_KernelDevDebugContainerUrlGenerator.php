@@ -33,7 +33,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         'main' => [[], ['_controller' => 'App\\Controller\\MainController::index'], [], [['text', '/']], [], []],
-        'news' => [['id'], ['_controller' => 'App\\Controller\\NewsController::index'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/news']], [], []],
+        'news' => [['id'], ['_controller' => 'App\\Controller\\MainController::getOneNews'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/news']], [], []],
     ];
         }
     }
