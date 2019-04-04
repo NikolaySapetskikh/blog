@@ -46,6 +46,11 @@ class News
      */
     private $originalLink;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="news")
+     */
+    private $category;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -119,6 +124,18 @@ class News
     public function setOriginalLink(?string $originalLink): self
     {
         $this->original_link = $originalLink;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }

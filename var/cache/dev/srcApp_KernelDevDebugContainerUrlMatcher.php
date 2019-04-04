@@ -20,7 +20,12 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
             '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
             '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+            '/admin' => [[['_route' => 'admin', '_controller' => 'App\\Controller\\AdminController::index'], null, null, null, false, false, null]],
+            '/admin/category' => [[['_route' => 'category_index', '_controller' => 'App\\Controller\\CategoryController::index'], null, ['GET' => 0], null, true, false, null]],
+            '/admin/category/new' => [[['_route' => 'category_new', '_controller' => 'App\\Controller\\CategoryController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
             '/' => [[['_route' => 'main', '_controller' => 'App\\Controller\\MainController::index'], null, null, null, false, false, null]],
+            '/admin/news' => [[['_route' => 'news_index', '_controller' => 'App\\Controller\\NewsController::index'], null, ['GET' => 0], null, true, false, null]],
+            '/admin/news/new' => [[['_route' => 'news_new', '_controller' => 'App\\Controller\\NewsController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         ];
         $this->regexpList = [
             0 => '{^(?'
@@ -39,7 +44,19 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
                             .'|(*:159)'
                         .')'
                     .')'
-                    .'|/news/([^/]++)(*:183)'
+                    .'|/admin/(?'
+                        .'|category/([^/]++)(?'
+                            .'|(*:199)'
+                            .'|/edit(*:212)'
+                            .'|(*:220)'
+                        .')'
+                        .'|news/([^/]++)(?'
+                            .'|(*:245)'
+                            .'|/edit(*:258)'
+                            .'|(*:266)'
+                        .')'
+                    .')'
+                    .'|/news/([^/]++)(*:290)'
                 .')/?$}sDu',
         ];
         $this->dynamicRoutes = [
@@ -50,7 +67,13 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'], ['token'], null, null, false, false, null]],
             149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
             159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-            183 => [[['_route' => 'news', '_controller' => 'App\\Controller\\MainController::getOneNews'], ['id'], null, null, false, true, null]],
+            199 => [[['_route' => 'category_show', '_controller' => 'App\\Controller\\CategoryController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+            212 => [[['_route' => 'category_edit', '_controller' => 'App\\Controller\\CategoryController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+            220 => [[['_route' => 'category_delete', '_controller' => 'App\\Controller\\CategoryController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
+            245 => [[['_route' => 'news_show', '_controller' => 'App\\Controller\\NewsController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+            258 => [[['_route' => 'news_edit', '_controller' => 'App\\Controller\\NewsController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+            266 => [[['_route' => 'news_delete', '_controller' => 'App\\Controller\\NewsController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
+            290 => [[['_route' => 'news', '_controller' => 'App\\Controller\\MainController::getOneNews'], ['id'], null, null, false, true, null]],
         ];
     }
 }

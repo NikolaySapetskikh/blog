@@ -23,7 +23,7 @@ class MainController extends AbstractController
     public function getOneNews(NewsRepository $newsRepository, $id)
     {	
     	$selectedNews = $newsRepository -> find($id);
-        return $this->render('news/index.html.twig', compact('selectedNews'));
+        return $this->render('news/oneNews.html.twig', compact('selectedNews'));
     }
 
 }

@@ -8,10 +8,15 @@
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/news/{id}',
+                    '/',
                 ],
                 'name' => [
-                    'news',
+                    'news_index',
+                ],
+                'methods' => [
+                    [
+                        'GET',
+                    ],
                 ],
             ],
         ],

@@ -32,8 +32,19 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+        'admin' => [[], ['_controller' => 'App\\Controller\\AdminController::index'], [], [['text', '/admin']], [], []],
+        'category_index' => [[], ['_controller' => 'App\\Controller\\CategoryController::index'], [], [['text', '/admin/category/']], [], []],
+        'category_new' => [[], ['_controller' => 'App\\Controller\\CategoryController::new'], [], [['text', '/admin/category/new']], [], []],
+        'category_show' => [['id'], ['_controller' => 'App\\Controller\\CategoryController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/category']], [], []],
+        'category_edit' => [['id'], ['_controller' => 'App\\Controller\\CategoryController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/admin/category']], [], []],
+        'category_delete' => [['id'], ['_controller' => 'App\\Controller\\CategoryController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/category']], [], []],
         'main' => [[], ['_controller' => 'App\\Controller\\MainController::index'], [], [['text', '/']], [], []],
         'news' => [['id'], ['_controller' => 'App\\Controller\\MainController::getOneNews'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/news']], [], []],
+        'news_index' => [[], ['_controller' => 'App\\Controller\\NewsController::index'], [], [['text', '/admin/news/']], [], []],
+        'news_new' => [[], ['_controller' => 'App\\Controller\\NewsController::new'], [], [['text', '/admin/news/new']], [], []],
+        'news_show' => [['id'], ['_controller' => 'App\\Controller\\NewsController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/news']], [], []],
+        'news_edit' => [['id'], ['_controller' => 'App\\Controller\\NewsController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/admin/news']], [], []],
+        'news_delete' => [['id'], ['_controller' => 'App\\Controller\\NewsController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/admin/news']], [], []],
     ];
         }
     }

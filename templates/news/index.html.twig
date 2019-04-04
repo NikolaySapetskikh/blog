@@ -1,17 +1,45 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Горячая новость{% endblock %}
+{% block title %}News index{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <h1>Редактор новостей</h1>
 
-<div class="example-wrapper">
-	<a href="/">Вернуться к списку новостей</a>
-    <h1>{{selectedNews.title}}</h1>
-    <p>{{selectedNews.content}}</p>
-    <h6>Источник: {{selectedNews.author}} <br><a href="{{selectedNews.originalLink}}">Ссылка на оригинал </a> </h6></li>
-</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Author</th>
+                <th>PublishedTime</th>
+                <th>Actions</th>
+                <th>OriginalLink</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for news in news %}
+            <tr>
+                <td>{{ news.id }}</td>
+                <td>{{ news.title }}</td>
+                <td>{{ news.content }}</td>
+                <td>{{ news.author }}</td>
+                <td>{{ news.publishedTime ? news.publishedTime|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ news.actions ? 'Yes' : 'No' }}</td>
+                <td>{{ news.originalLink }}</td>
+                <td>
+                    <a href="{{ path('news_show', {'id': news.id}) }}">show</a>
+                    <a href="{{ path('news_edit', {'id': news.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('news_new') }}">Create new</a>
 {% endblock %}
