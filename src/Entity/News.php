@@ -99,7 +99,7 @@ class News
 
     public function setPublishedTime(?\DateTimeInterface $publishedTime): self
     {
-        $this->published_time = $publishedTime;
+        $this->publishedTime = $publishedTime;
 
         return $this;
     }
@@ -123,7 +123,7 @@ class News
 
     public function setOriginalLink(?string $originalLink): self
     {
-        $this->original_link = $originalLink;
+        $this->originalLink = $originalLink;
 
         return $this;
     }
