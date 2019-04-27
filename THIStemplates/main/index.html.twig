@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MainNews{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 900px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>-=Список всех новостей сайта=-</h1>
+
+    
+    <ul>
+        {% for news in allNews %}
+		    <li><a href="{{path('news',{'id':news.id})}}">{{ news.title }}...</a><h6>Источник: {{news.author}} <br><a href="{{news.originalLink}}">Ссылка на оригинал </a> </h6></li>
+		{% endfor %}
+    </ul>
+</div>
+{% endblock %}

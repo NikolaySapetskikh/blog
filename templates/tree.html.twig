@@ -1,0 +1,17 @@
+{% macro list(items, step = 0) %}
+    {% import _self as tree %}
+
+    <ul class="tree-list-step-{{ step }}" style="margin-left: {{ step * 25 }}px;">
+        {% for item in items %}
+            <li>
+                {{ item.content }}
+                    <a href="{{path('comment_new',{'id':item.id ~ 'comment'})}}">Ответить</a></h6>
+                
+                {% if item.childNodes %}
+                    {{ tree.list(item.childNodes, step + 1) }}
+                {% endif %}
+
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}

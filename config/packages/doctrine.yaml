@@ -5,6 +5,9 @@ parameters:
     # You should not need to change this value.
     env(DATABASE_URL): ''
 
+imports:
+    - { resource: ../../vendor/knplabs/doctrine-behaviors/config/orm-services.yml }
+
 doctrine:
     dbal:
         # configure these for your database server
