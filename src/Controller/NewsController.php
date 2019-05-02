@@ -37,8 +37,6 @@ class NewsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($news);
-            $news->getCreatedAt();
-            $news->getUpdatedAt();
             $entityManager->flush();
 
             return $this->redirectToRoute('news_index');

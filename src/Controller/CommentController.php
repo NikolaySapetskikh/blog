@@ -20,7 +20,7 @@ class CommentController extends AbstractController
      * @Route("/", name="comment_index", methods={"GET"})
      */
     public function index(CommentRepository $commentRepository): Response
-    {    dump($commentRepository->findAll());
+    {
         return $this->render('comment/index.html.twig', [
             'comments' => $commentRepository->findAll(),
         ]);
